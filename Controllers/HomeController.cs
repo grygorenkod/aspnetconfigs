@@ -18,7 +18,7 @@ namespace ConfigTests.Controllers
 
         public IActionResult Index()
         {
-            return View("Index", _configuration.GetValue<string>("DbConnection"));
+            return View("Index", _configuration.GetValue<string>("ConnectionString"));
         }
 
         public IActionResult Privacy()
